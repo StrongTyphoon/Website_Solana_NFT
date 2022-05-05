@@ -5,6 +5,7 @@
     border-collapse: collapse;
     list-style: none;
     text-emphasis: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -16,8 +17,8 @@ input, textarea, button, html { appearance: none; -moz-appearance: none; -webkit
 
 h1{
     color: white;
-    font-size: 1.5rem;
-    font-family:'Malgun Gothic';
+    font-size: 28px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .big_wrap{
@@ -59,7 +60,7 @@ header{
 
 .navbar_menu a {
     color: rgba(255, 255, 255, 0.9);
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .navbar_icons a {
@@ -193,10 +194,13 @@ header{
     overflow: hidden;
     width: 500px;
 }
+.home_text{
+    letter-spacing: 1.8px;
+}
 
 .home_text{
     position: relative;
-    font-family: 'Gowun Batang', serif;
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     font-size: 20px;
     color: white;
@@ -268,11 +272,15 @@ header{
     .stage {
         height: 750px;
     }
+
+    .stage span {
+        box-shadow: 0 0 0 0.3px rgba(255, 255, 255, 0.863), 0 0 0 0.7px #f2f2f2a4, 0 0 3px 2px #e6e6e6 ;
+    }
 }
 
 /* About */
 .about_wrap2{
-    background: url(./KakaoTalk_20220402_174615206_04.png) no-repeat center center / cover;
+    background: url(./wallpaper/about_wallpaper2.png) no-repeat center center / cover;
 }
 
 .about_title{
@@ -361,7 +369,7 @@ header{
 .about_content1{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: url(./unknown2.png) no-repeat center center / cover;
+    background: url(./wallpaper/about_wallpaper1.jpg) no-repeat center center / cover;
 }
 
 .about_content1_card{
@@ -397,7 +405,8 @@ header{
 .cardbox1{
     position: absolute;
     margin-top: 70px;
-    font-family: 'Malgun Gothic';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight : 700;
     font-size: 50px;
     font-weight: bold;
     color: rgb(83, 55, 150);
@@ -406,14 +415,14 @@ header{
 .cardbox_button{
     position: absolute;
     margin-top: 390px;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: rgb(83, 55, 150);
-    padding:  2px 25px 4px 25px;
+    padding:  1px 25px 3px 25px;
     color: white;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .cardbox_button:hover{
@@ -424,10 +433,10 @@ header{
 .cardbox2{
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(180, 180, 180, 0.45);
+    color: rgba(180, 180, 180, 0.65);
     position: absolute;
     margin-top: 310px;
-    font-family:'Malgun Gothic';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #dynamic {
@@ -465,7 +474,7 @@ header{
     }
 
     .cardbox1{
-        margin-top: calc(0px + 5vw);;
+        margin-top: calc(0px + 4vw);;
     }
 
     .cardbox2{
@@ -475,7 +484,7 @@ header{
     .cardbox_button{
         margin-top: calc(12px + 38vw);
         font-size: calc(0.1rem + 1.5vw);
-        padding:  calc(0px + 0.4vw) calc(15px + 1.7vw) calc(1.5px + 0.4vw) calc(15px + 1.7vw);
+        padding:  calc(0px + 0.3vw) calc(15px + 1.7vw) calc(1px + 0.3vw) calc(15px + 1.7vw);
     }
 
     .cardbox3 img{
@@ -500,10 +509,11 @@ header{
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 70px;
+    
 }
 
 .about_content2 h3{
-    font-family:'Malgun Gothic';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .about_content2 .about_content2_card{
@@ -519,6 +529,7 @@ header{
 
 .about_content2_content p{
     font-family: 'Gowun Batang', serif;
+    text-align: center;
     font-size: 18px;
 }
 .about_content2_content img{
@@ -533,11 +544,11 @@ header{
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .about_content2 .about_content2_card:hover .face.face1 {
-    background: rgb(125, 21, 151);
+    background: rgb(131, 28, 156);
     transform: translateY(0);
 }
 
@@ -574,7 +585,7 @@ header{
     transform: translateY(-100px);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .about_content2 .about_content2_card:hover .face.face2{
@@ -606,7 +617,7 @@ header{
 
 /* Team */
 .teamwrap{
-    background: url(./unknown4.png) no-repeat center center / cover;
+    background: url(./wallpaper/team_wallpaper1.png) no-repeat center center / cover;
 }
 
 .who{
@@ -621,19 +632,21 @@ header{
     font-weight: bold;
     z-index: 1;
 }
-
 .who_content{
     text-align: center;
     font-size: 35px;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 .who_content2{
     text-align: center;
     font-size: 20px;
     margin-top: 50px;
-    font-family: 'Gowun Batang', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .whoicon{
@@ -662,6 +675,10 @@ header{
     margin: auto;
     position: relative;
     padding-bottom: 120px;
+}
+
+.team-container h2, .team-container p{
+    font-family: 'Gowun Batang', serif;
 }
 
 .main-group{
@@ -758,7 +775,7 @@ header{
 }
 
 .team-member{
-   font-size: 36px;
+   font-size: 35px;
 }
 
 .flip-box-icons{
@@ -812,17 +829,17 @@ header{
     }
 
     .front-introduce h2{
-        font-size: 22px;
+        font-size: calc(12px + 2vw);
     }
 
     .front-introduce p{
-        font-size: 12px;
+        font-size: calc(10px + 0.5vw);
     }
     .back-introduce h2{
-        font-size: 24px;
+        font-size: 25px;
     }
     .back-introduce{
-        font-size: 12px;
+        font-size: 15px;
         margin: 10px;
         top: 20px;
         line-height: 1.3;
@@ -832,12 +849,12 @@ header{
 /*Roadmap*/
 
  .timeline {
-    background: url(./KakaoTalk_20220403_203758184_02.png.jpg) no-repeat center center / cover;
+    background: url(./wallpaper/about_wallpaper2.png) no-repeat center center / cover;
      color: white;
 }
 
 .content2 p{
-    font-family: 'Gowun Batang', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .content2{
@@ -875,7 +892,7 @@ header{
 	 padding: 30px 0 100px 0;
 }
  .timeline ul li {
-	 background: rgb(83, 55, 150);
+	 background: #5f14916b;
 	 position: relative;
 	 margin: 0 auto;
 	 width: 5px;
@@ -887,7 +904,7 @@ header{
 }
 
  .timeline ul li .content2 {
-	 background: rgb(83, 55, 150);
+	 background: #5f14916b;
 	 position: relative;
 	 top: 7px;
 	 width: 450px;
@@ -904,18 +921,18 @@ header{
 
  .timeline ul li:nth-child(odd) .content2 {
 	 left: 46px;
-	 background: rgb(83, 55, 150);
-	 background: -webkit-linear-gradient(-45deg, #56bc83, rgb(83, 55, 150));
-	 background: linear-gradient(-45deg, #56bc83, rgb(83, 55, 150));
+	 background: #5f14916b;
+	 background: -webkit-linear-gradient(-45deg, #440f68e7, #5f14916b);
+	 background: linear-gradient(-45deg, #440f68e7, #5f14916b);
 }
  .timeline ul li:nth-child(odd) .content2:before {
 	 left: -38px;
 }
  .timeline ul li:nth-child(even) .content2 {
 	 left: calc(-450px - 45px);
-	 background: rgb(83, 55, 150);
-	 background: -webkit-linear-gradient(45deg, #56bc83, rgb(83, 55, 150));
-	 background: linear-gradient(45deg, #56bc83, rgb(83, 55, 150));
+	 background: #5f14916b;
+	 background: -webkit-linear-gradient(45deg, #440f68e7, #5f14916b);
+	 background: linear-gradient(45deg, #440f68e7, #5f14916b);
 }
  .timeline ul li:nth-child(even) .content2:before {
 	 right: -42px;
@@ -942,9 +959,9 @@ header{
     
 	 .timeline ul li:nth-child(even) .content2 { 
 		 left: 45px;
-		 background: rgb(83, 55, 150);
-		 background: -webkit-linear-gradient(-45deg, #56bc83, rgb(83, 55, 150));
-		 background: linear-gradient(-45deg, #56bc83, rgb(83, 55, 150));
+         background: #5f14916b;
+         background: -webkit-linear-gradient(-45deg, #440f68e7, #5f14916b);
+         background: linear-gradient(-45deg, #440f68e7, #5f14916b);
 	}
 	 .timeline ul li:nth-child(even) .content2:before {
 		 left: -33px;
@@ -958,6 +975,12 @@ header{
     padding-top: 100px;
 }
 
+.faq_wrap{
+    background: url(./wallpaper/faq_wallpaper1.png) no-repeat center center / cover;
+    padding-bottom: 100px;
+    height: 700px
+}
+
 #faq h1{
     color: rgba(183, 117, 221);
     padding-bottom: 30px;
@@ -968,6 +991,7 @@ header{
 	 width: 1000px;
      flex-direction: column;
 }
+
 .faqcontainer p{
     color: rgba(255, 255, 255, 0.8);
 }
@@ -1002,7 +1026,7 @@ header{
 }
  .accordion button .accordion-title {
 	 padding: 1em 1.5em 1em 0;
-     font-family: 'Gowun Batang', serif;    
+     font-family: 'Noto Sans KR', sans-serif;  
 }
  .accordion button .icon {
 	 display: inline-block;
@@ -1054,10 +1078,13 @@ header{
 	 will-change: opacity, max-height;
 }
  .accordion .accordion-content p {
-     font-family: 'Gowun Batang', serif;
 	 font-size: 1rem;
 	 font-weight: 300;
 	 margin: 2em 0;
+}
+
+.accordion-content p {
+    font-family: 'Gowun Batang', serif;
 }
 
 @media screen and (max-width:768px) {
@@ -1078,11 +1105,6 @@ header{
 
 
 /*Footer*/
-.faq_wrap{
-    background: url(./IMG_3581.png) no-repeat center center / cover;
-    padding-bottom: 100px;
-    height: 700px
-}
 
 footer{
     position: absolute;
@@ -1106,8 +1128,8 @@ footer{
     font-size: 13px;
     color: white;
     position: absolute;
-    margin-top: 170px;
-    font-family: 'Gowun Batang', serif;
+    margin-top: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1120,15 +1142,15 @@ footer{
 }
 
 .footer_content2 p{
-    font-family: 'Gowun Batang', serif;
-    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
     color: rgba(255, 255, 255,0.8);
 
 }
 
 .footer_content2 a{
-    font-size: 19px;
-    font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
     color: rgba(255, 255, 255, 0.9);
     padding-right: 8px;
     padding-left: 8px;
